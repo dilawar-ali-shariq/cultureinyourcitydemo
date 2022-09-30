@@ -4,43 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./teamBuilding.css">
+    <title>Team Building</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            screens: {
+                'mobileS' : '320px',
+                'mobile' : '500px' ,
+                'tablet' : '768px' 
+            },
+            backgroundSize: {
+                'cov' : '100% 100% , contain'
+            }
+          }
+        }
+      </script>
 </head>
 <body>
-    <div class="main">
-        <div class="text">
-            <h1 class="size-1">Team Building</h1>
-            <p class="size-2">Want to book a private event for your organization, company, or team?</p>
+    <div class="flex items-center h-[626px] bg-[url('./assets/Rectangle.png')] bg-cov bg-center bg-no-repeat">
+        <div class="text-[#FFFFFF] w-[890px] mobile:mx-14 mobileS:mx-7">
+            <h1 class="font-bold tablet:text-6xl mobile:text-5xl mobileS:text-4xl leading-[75px]">Team Building</h1>
+            <p class="font-semibold mt-2 tablet:text-2xl mobile:text-[22px] mobileS:text-xl leading-9">Want to book a private event for your organization, company, or team?</p>
         </div>
     </div>
-    <div class="info flex">
-        <div class="cover">
-            <h2 class="size-3">Event Info</h2>
-            <p class="size-4">Most of our events could be customized for your team, family or organization. These events offer opportunities to engage in conversation around some fun experiential activity, that make for more interesting conversation and time together.</p>
-            <p class="size-4">For teams, these events could also be customized and integrated with a cultural immersion workshop.</p>
-            <h2 class="size-3">General Info</h2>
-            <p class="size-4">Please let us know a few initial details to get the process started.</p>
-            <input type="text" class="input-bar" placeholder="Your Name">
-            <input type="text" class="input-bar" placeholder="Organization / Company / Team">
-            <input type="text" class="input-bar" placeholder="Email Address">
-            <input type="text" class="input-bar" placeholder="Phone Number">
-            <p class="size-4 p1">What type of event do you want to schedule?</p>
-            <div class="check">
-                <div class="check-box flex"><input class="box" type="checkbox" name="Arts & Crafts"><p class="size-5">Arts & Crafts</p></div>
-                <div class="check-box flex"><input class="box" type="checkbox" name="Food"><p class="size-5">Food</p></div>
-                <div class="check-box flex"><input class="box" type="checkbox" name="Self Care"><p class="size-5">Self Care</p></div>
-                <div class="check-box flex"><input class="box" type="checkbox" name="Entertainment"><p class="size-5">Entertainment</p></div>
-                <div class="check-box flex"><input class="box" type="checkbox" name="Educational"><p class="size-5">Educational</p></div>
-                <div class="check-box flex"><input class="box" type="checkbox" name="Other"><p class="size-5">Other</p></div>
+    <div class="flex items-center justify-center bg-[#E5E5E5]">
+        <div class="w-[874px] mx-5">
+            <h2 class="text-[#456A87] pt-7 pb-5 font-semibold tablet:text-3xl mobile:text-[27px] mobileS:text-2xl leading-[70px]">Event Info</h2>
+            <p class="text-[#000000] pb-3.5 font-normal tablet:text-lg mobile:text-base mobileS:text-sm leading-6">Most of our events could be customized for your team, family or organization. These events offer opportunities to engage in conversation around some fun experiential activity, that make for more interesting conversation and time together.</p>
+            <p class="text-[#000000] pb-3.5 font-normal tablet:text-lg mobile:text-base mobileS:text-sm leading-6">For teams, these events could also be customized and integrated with a cultural immersion workshop.</p>
+            <h2 class="text-[#456A87] pt-7 pb-5 font-semibold tablet:text-3xl mobile:text-[27px] mobileS:text-2xl leading-[70px]">General Info</h2>
+            <p class="text-[#000000] pb-3.5 font-normal tablet:text-lg mobile:text-base mobileS:text-sm leading-6">Please let us know a few initial details to get the process started.</p>
+            <input type="text" class="text-[#456A87] w-full mb-3.5 border-[#456A87] border rounded-md p-3.5" placeholder="Your Name">
+            <input type="text" class="text-[#456A87] w-full mb-3.5 border-[#456A87] border rounded-md p-3.5" placeholder="Organization / Company / Team">
+            <input type="text" class="text-[#456A87] w-full mb-3.5 border-[#456A87] border rounded-md p-3.5" placeholder="Email Address">
+            <input type="text" class="text-[#456A87] w-full mb-3.5 border-[#456A87] border rounded-md p-3.5" placeholder="Phone Number">
+            <p class="pt-3.5 text-[#000000] pb-3.5 font-normal tablet:text-lg mobile:text-base mobileS:text-sm leading-6">What type of event do you want to schedule?</p>
+            <div class="flex tablet:flex-row mobileS:flex-col mobileS:items-start mt-3 mb-7">
+                <div class="flex items-center justify-center"><input class="tablet:w-5 w-[18px] tablet:h-5 h-[18px] border border-[#456A87] rounded-md" type="checkbox" name="Arts & Crafts"><p class="pl-2 pr-4 font-normal tablet:text-lg mobile:text-base mobileS:text-sm leading-6">Arts & Crafts</p></div>
+                <div class="flex items-center justify-center"><input class="tablet:w-5 w-[18px] tablet:h-5 h-[18px] border border-[#456A87] rounded-md" type="checkbox" name="Food"><p class="pl-2 pr-4 font-normal tablet:text-lg mobile:text-base mobileS:text-sm leading-6">Food</p></div>
+                <div class="flex items-center justify-center"><input class="tablet:w-5 w-[18px] tablet:h-5 h-[18px] border border-[#456A87] rounded-md" type="checkbox" name="Self Care"><p class="pl-2 pr-4 font-normal tablet:text-lg mobile:text-base mobileS:text-sm leading-6">Self Care</p></div>
+                <div class="flex items-center justify-center"><input class="tablet:w-5 w-[18px] tablet:h-5 h-[18px] border border-[#456A87] rounded-md" type="checkbox" name="Entertainment"><p class="pl-2 pr-4 font-normal tablet:text-lg mobile:text-base mobileS:text-sm leading-6">Entertainment</p></div>
+                <div class="flex items-center justify-center"><input class="tablet:w-5 w-[18px] tablet:h-5 h-[18px] border border-[#456A87] rounded-md" type="checkbox" name="Educational"><p class="pl-2 pr-4 font-normal tablet:text-lg mobile:text-base mobileS:text-sm leading-6">Educational</p></div>
+                <div class="flex items-center justify-center"><input class="tablet:w-5 w-[18px] tablet:h-5 h-[18px] border border-[#456A87] rounded-md" type="checkbox" name="Other"><p class="pl-2 pr-4 font-normal tablet:text-lg mobile:text-base mobileS:text-sm leading-6">Other</p></div>
             </div>
-            <p class="size-4">What culture do you want the event to be from?</p>
-            <div class="drop-box flex">
-                <p class="size-6">All Cultures</p><img class="size-7" src="./assets/Vector.png">
+            <p class="text-[#000000] pb-3.5 font-normal tablet:text-lg mobile:text-base mobileS:text-sm leading-6">What culture do you want the event to be from?</p>
+            <div class="flex items-center justify-center h-10 w-[136px] border-[#E07A5F] border-2 rounded-md py-2.5 px-4 text-[#E07A5F] mt-2.5 mb-6">
+                <p class="font-semibold text-sm pr-2">All Cultures</p><img class="w-2 h-1.5" src="./assets/Vector.png">
             </div>
-            <p class="size-4">Please provide a more detailed explanation into your expectations for the event so we can create a better curated experience for you.</p>
-            <input type="text" class="input-bar-2" placeholder="More Details">
-            <div class="button-cover"><button class="button" type="submit">Submit</button></div>
+            <p class="text-[#000000] pb-3.5 font-normal tablet:text-lg mobile:text-base mobileS:text-sm leading-6">Please provide a more detailed explanation into your expectations for the event so we can create a better curated experience for you.</p>
+            <input type="text" class="text-[#456A87] p-3.5 w-full h-[308px] border border-[#456A87] rounded-md my-3.5" placeholder="More Details">
+            <div><button class="flex py-3 px-5 bg-[#E07A5F] font-semibold rounded-md mobile:text-xl mobileS:text-base text-[#FFFFFF] mt-2.5 mb-7 ml-auto" type="submit">Submit</button></div>
         </div>
     </div>
 </body>

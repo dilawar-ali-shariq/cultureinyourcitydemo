@@ -5,73 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            screens: {
+                'mobileS' : '320px',
+                'mobile' : '500px' ,
+                'tablet' : '768px' 
+            },
+            backgroundSize: {
+                'cov' : '100% 100% , contain'
+            }
+          }
+        }
+      </script>
 </head>
 <body>
-    <div class="main">
-        <div class="text">Cultural Exploration Possible Wherever, Whenever</div>
+    <div class="flex items-center h-[400px] bg-[url('.//assets/Header.png')] bg-cov bg-center bg-no-repeat">
+        <div class="w-[980px] mobile:mx-14 mobileS:mx-7 text-[#FFFFFF] tablet:text-6xl mobile:text-5xl mobileS:text-4xl font-bold tablet:leading-[100px] mobile:leading-[70px] mobileS:leading-[50px]">Cultural Exploration Possible Wherever, Whenever</div>
     </div>
-    <div class="about-us flex">
-        <div class="cover">
-            <div class="row-1">About Us</div>
-            <div class="row-2"><p class="p4">We are a Chicago based company. We started with the focus of making cultural exploration possible wherever we are.</p> 
+    <div class="flex items-center justify-center bg-[#E5E5E5]">
+        <div class="w-[650px] mx-5">
+            <div class="w-36 my-7 text-[#353535] font-bold mobile:text-3xl mobileS:text-2xl leading-[70px]">About Us</div>
+            <div class="min-w-min text-[#111111] tablet:text-lg mobile:text-base mobileS:text-sm font-normal leading-6"><p class="pb-7">We are a Chicago based company. We started with the focus of making cultural exploration possible wherever we are.</p> 
 
-                <p class="p4">We are committed to global diversity and awareness. More specifically we want to facilitate the opportunity for everyone to engage in experiences from various cultures that collectively represent the people of the USA.</p>
+                <p class="pb-7">We are committed to global diversity and awareness. More specifically we want to facilitate the opportunity for everyone to engage in experiences from various cultures that collectively represent the people of the USA.</p>
                 
-                <p class="p4">We want people to be able to travel internationally right here in their cities in the USA and experience a different culture without having to get on a plane… We also want it to be easier for people to share their events and communities with others who may not normally have access.</p>
+                <p class="pb-7">We want people to be able to travel internationally right here in their cities in the USA and experience a different culture without having to get on a plane… We also want it to be easier for people to share their events and communities with others who may not normally have access.</p>
             </div>
-            <div class="row-3">
-                <div class="col-1"></div>
-                <div class="col-2">
-                    <div class="row-3-1">“Doing what you like is freedom, liking what you do is happiness.”</div>
-                    <div class="row-3-2">― Sudha Murty</div>
-                </div>
+            <div class="mt-5 border-l-[6px] border-[#F2CC8F] pl-5 mb-7">
+                <div class="min-w-min text-[#E07A5F] mobileS:leading-[35px] mobile:leading-[40px] tablet:leading-[45px] font-bold tablet:text-2xl mobile:text-[22px] mobileS:text-xl tracking-[0.5%]">“Doing what you like is freedom, liking what you do is happiness.”</div>
+                <div class="w-40 font-normal tablet:text-lg mobile:text-base mobileS:text-sm leading-6 text-[#456A87] mt-2.5">― Sudha Murty</div>
             </div>
         </div>
     </div>
-    <div class="video flex">
-        <div class="cover-2">
-            <div class="row-4 flex">Watch Our Welcome Video</div>
-            <div class="row-5"></div>
+    <div class="flex items-center justify-center bg-[#F6F5F0]">
+        <div class="w-[650px] mx-5">
+            <div class="flex items-center justify-center text-center my-7 min-w-min font-bold mobile:text-3xl mobileS:text-2xl leading-[70px] text-[#353535]">Watch Our Welcome Video</div>
+            <div class="h-[366px] mb-7"></div>
         </div>
     </div>
-    <div class="who-we-are flex">
-        <div class="cover-3">
-            <div class="row-6">Who We Are</div>
-            <div class="row-7">
-                <div class="col-3">
-                    <img class="nitha" src="./assets/nitha.png">
+    <div class="flex items-center justify-center bg-[#E5E5E5]">
+        <div class="w-[650px] mx-5">
+            <div class="w-48 mt-7 font-bold mobile:text-3xl mobileS:text-2xl leading-[70px] text-[#353535]">Who We Are</div>
+            <div class="flex mobile:flex mobileS:block">
+                <div>
+                    <img class="mt-7 tablet:min-w-[185px] mobile:min-w-[155px] mobileS:min-w-[130px] rounded-[50%] border-8 border-[#F4F1DE]" src="./assets/nitha.png">
                 </div>
-                <div class="col-4">
-                    <div class="row-4-1">
-                        <p class="p1">Dr. Nitha Fiona Nagubadi</p>
-                        <p class="p2">Founder</p>
-                        <p class="p3">Doctorate in business psychology with research on foreign culture and creativity. 15 years experience managing international teams and projects for ecommerce programs for global brands. Passion for and extensive experience with organizing cultural events and diversity training. Created and produced content for an international TV channel and Film distribution for Indian content. Multicultural heritage and  organizer of extensive community cultural events leadership and diversity events.</p>
+                <div class="mobile:ml-7 mobileS:mt-7">
+                    <div class="min-w-min font-semibold tablet:text-2xl mobile:text-[22px] mobileS:text-xl mb-7">
+                        <p class="text-[#353535]">Dr. Nitha Fiona Nagubadi</p>
+                        <p class="text-[#E07A5F]">Founder</p>
+                        <p class="mt-2.5 text-[#111111] font-normal tablet:text-lg mobile:text-base mobileS:text-sm leading-6">Doctorate in business psychology with research on foreign culture and creativity. 15 years experience managing international teams and projects for ecommerce programs for global brands. Passion for and extensive experience with organizing cultural events and diversity training. Created and produced content for an international TV channel and Film distribution for Indian content. Multicultural heritage and  organizer of extensive community cultural events leadership and diversity events.</p>
                     </div>
                 </div>
             </div>
-            <div class="row-7">
-                <div class="col-3">
-                    <img class="nitha" src="./assets/raven.png">
+            <div class="flex mb-5 mobile:flex-row mobileS:flex-col">
+                <div>
+                    <img class="mt-7 tablet:min-w-[185px] mobile:min-w-[155px] mobileS:min-w-[130px] rounded-[50%] border-8 border-[#F4F1DE]" src="./assets/raven.png">
                 </div>
-                <div class="col-4">
-                    <div class="row-4-1">
-                        <p class="p1">Raven Palmer</p>
-                        <p class="p2">Marketing Manager</p>
-                        <p class="p3">Recent grad from Columbia College Chicago with a bachelor’s degree in Public Relations. Even though I’m not a marketing major, I’ve always been interested in learning more about it. I believe combining my PR skills with my new marketing skills will help the team and myself reach our goals for our projects. When I’m not working I love to workout, go to concerts, and hangout with friends. Plus, I love trying different foods from other cultures and learning information I never knew before.</p>
+                <div class="mobile:ml-7 mobileS:mt-7">
+                    <div class="min-w-min font-semibold tablet:text-2xl mobile:text-[22px] mobileS:text-xl mb-7">
+                        <p class="text-[#353535]">Raven Palmer</p>
+                        <p class="text-[#E07A5F]">Marketing Manager</p>
+                        <p class="mt-2.5 text-[#111111] font-normal tablet:text-lg mobile:text-base mobileS:text-sm leading-6">Recent grad from Columbia College Chicago with a bachelor’s degree in Public Relations. Even though I’m not a marketing major, I’ve always been interested in learning more about it. I believe combining my PR skills with my new marketing skills will help the team and myself reach our goals for our projects. When I’m not working I love to workout, go to concerts, and hangout with friends. Plus, I love trying different foods from other cultures and learning information I never knew before.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="happy-clients flex">
-        <div class="cover-4">
-            <div class="row-8 flex">Happy Clients</div>
-            <div class="row-9 flex">
-                <div><img class="col-5" src="./assets/Microsoft.png" ></div>
-                <div><img class="col-5" src="./assets/National.png" ></div>
-                <div><img class="col-5" src="./assets/Google.png" ></div>
-                <div><img class="col-5" src="./assets/Chase.png" ></div>
+    <div class="flex items-center justify-center bg-[#F6F5F0]">
+        <div class="w-[800px]">
+            <div class="flex items-center justify-center my-7 min-w-min font-bold mobile:text-3xl mobileS:text-2xl leading-[70px]">Happy Clients</div>
+            <div class="flex flex-col items-center justify-center my-10 mx-5 tablet:gap-[70px] mobile:gap-[30px] mobile:flex-row mobileS:gap-[40px]">
+                <div><img class="w-[140px]" src="./assets/National.png" ></div>
+                <div><img class="w-[140px]" src="./assets/Microsoft.png" ></div>
+                <div><img class="w-[140px]" src="./assets/Google.png" ></div>
+                <div><img class="w-[140px]" src="./assets/Chase.png" ></div>
             </div>
         </div>
     </div>
