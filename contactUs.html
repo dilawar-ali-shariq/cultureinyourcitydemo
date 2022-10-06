@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            screens: {
+                'mobileS' : '320px',
+                'mobile' : '500px' ,
+                'tablet' : '768px'
+            }
+          }
+        }
+    </script>
+</head>
+<body>
+    <div class="flex justify-center items-center bg-[#F5F5F5]">
+        <div class="w-[932px] mx-5">
+            <h1 class="text-center my-14 font-semibold tablet:text-6xl mobile:text-5xl mobileS:text-4xl text-[#456A87]">Contact Us</h1>
+            <div class="bg-[#F1F1F1] tablet:px-20 mobile:px-14 mobileS:px-7 py-16 mb-14 rounded-[49px]">
+                <input type="text" class="w-full h-[73px] placeholder-[#000000] font-semibold text-[#000000] tablet:text-base mobile:text-sm mobileS:text-xs mobile:px-8 mobileS:px-5 bg-[#FFFFFF] mb-7" placeholder="First Name">
+                <input type="text" class="w-full h-[73px] placeholder-[#000000] font-semibold text-[#000000] tablet:text-base mobile:text-sm mobileS:text-xs mobile:px-8 mobileS:px-5 bg-[#FFFFFF] mb-7" placeholder="Last Name">
+                <input type="email" class="w-full h-[73px] placeholder-[#000000] font-semibold text-[#000000] tablet:text-base mobile:text-sm mobileS:text-xs mobile:px-8 mobileS:px-5 bg-[#FFFFFF] mb-7" placeholder="Email">
+                <input type="number" class="w-full h-[73px] placeholder-[#000000] font-semibold text-[#000000] tablet:text-base mobile:text-sm mobileS:text-xs mobile:px-8 mobileS:px-5 bg-[#FFFFFF] mb-7" placeholder="Phone">
+                <div class="flex bg-[#FFFFFF]">
+                    <textarea name="signup for event" class="tablet:w-3/4 mobileS:w-2/3 h-40 placeholder-[#000000] font-semibold text-[#000000] tablet:text-base mobile:text-sm mobileS:text-xs leading-5 mobile:px-8 mobileS:px-5 py-6" placeholder="Sign up for event"></textarea>
+                    <div class="h-40 pt-6 pb-4 w-36 tablet:mr-8 tablet:ml-6 mobile:mr-3 mobile:ml-3 mobileS:mr-2.5 mobileS:ml-2.5">
+                        <img src="./assets/Vector1.png">
+                        <div class="font-normal mobile:text-sm mobileS:text-xs text-[#868686] leading-5 mt-2">
+                            <p>Event registration</p> 
+                            <p>Account creation</p> 
+                            <p>Searching for event</p> 
+                            <p>Billing issue</p>  
+                            <p>Other</p> 
+                        </div>
+                    </div>
+                </div>
+                <textarea name="message" class="w-full h-36 placeholder-[#000000] font-semibold text-[#000000] tablet:text-base mobile:text-sm mobileS:text-xs leading-5 my-7 mobile:px-8 mobileS:px-5 py-6" placeholder="Message"></textarea>
+                <img src="./assets/captcha.png">
+                <button class="w-full h-[73px] bg-[#E07A5F] mt-7"><p class="text-[#FFFFFF] font-semibold tablet:text-xl mobile:text-lg mobileS:text-base">Submit</p></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
