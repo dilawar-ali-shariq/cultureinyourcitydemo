@@ -12,7 +12,7 @@
             screens: {
                 'mobileS' : '320px',
                 'mobile' : '500px' ,
-                'tablet' : '768px'
+                'tabletS' : '768px'
             }
           }
         }
@@ -20,31 +20,25 @@
 </head>
 <body>
     <div class="flex justify-center items-center bg-[#F5F5F5]">
-        <div class="w-[932px] mx-5">
-            <h1 class="text-center my-14 font-semibold tablet:text-6xl mobile:text-5xl mobileS:text-4xl text-[#456A87]">Contact Us</h1>
-            <div class="bg-[#F1F1F1] tablet:px-20 mobile:px-14 mobileS:px-7 py-16 mb-14 rounded-[49px]">
-                <input type="text" class="w-full h-[73px] placeholder-[#000000] font-semibold text-[#000000] tablet:text-base mobile:text-sm mobileS:text-xs mobile:px-8 mobileS:px-5 bg-[#FFFFFF] mb-7" placeholder="First Name">
-                <input type="text" class="w-full h-[73px] placeholder-[#000000] font-semibold text-[#000000] tablet:text-base mobile:text-sm mobileS:text-xs mobile:px-8 mobileS:px-5 bg-[#FFFFFF] mb-7" placeholder="Last Name">
-                <input type="email" class="w-full h-[73px] placeholder-[#000000] font-semibold text-[#000000] tablet:text-base mobile:text-sm mobileS:text-xs mobile:px-8 mobileS:px-5 bg-[#FFFFFF] mb-7" placeholder="Email">
-                <input type="number" class="w-full h-[73px] placeholder-[#000000] font-semibold text-[#000000] tablet:text-base mobile:text-sm mobileS:text-xs mobile:px-8 mobileS:px-5 bg-[#FFFFFF] mb-7" placeholder="Phone">
-                <div class="flex bg-[#FFFFFF]">
-                    <textarea name="signup for event" class="tablet:w-3/4 mobileS:w-2/3 h-40 placeholder-[#000000] font-semibold text-[#000000] tablet:text-base mobile:text-sm mobileS:text-xs leading-5 mobile:px-8 mobileS:px-5 py-6" placeholder="Sign up for event"></textarea>
-                    <div class="h-40 pt-6 pb-4 w-36 tablet:mr-8 tablet:ml-6 mobile:mr-3 mobile:ml-3 mobileS:mr-2.5 mobileS:ml-2.5">
-                        <img src="./assets/Vector1.png">
-                        <div class="font-normal mobile:text-sm mobileS:text-xs text-[#868686] leading-5 mt-2">
-                            <p>Event registration</p> 
-                            <p>Account creation</p> 
-                            <p>Searching for event</p> 
-                            <p>Billing issue</p>  
-                            <p>Other</p> 
-                        </div>
-                    </div>
-                </div>
-                <textarea name="message" class="w-full h-36 placeholder-[#000000] font-semibold text-[#000000] tablet:text-base mobile:text-sm mobileS:text-xs leading-5 my-7 mobile:px-8 mobileS:px-5 py-6" placeholder="Message"></textarea>
-                <img src="./assets/captcha.png">
-                <button class="w-full h-[73px] bg-[#E07A5F] mt-7"><p class="text-[#FFFFFF] font-semibold tablet:text-xl mobile:text-lg mobileS:text-base">Submit</p></button>
+        <div class="w-[800px] mx-5">
+            <h1 class="text-center my-14 font-semibold tabletS:text-4xl mobile:text-3xl mobileS:text-2xl text-[#456A87]">Contact Us</h1>
+            <div class="bg-[#F1F1F1] tabletS:px-20 mobile:px-14 mobileS:px-7 py-16 mb-14 rounded-[49px]">
+                <input type="text" class="w-full p-3 placeholder-[#000000] font-semibold text-[#000000] tabletS:text-sm mobile:text-xs mobileS:text-[10px] mobile:px-8 mobileS:px-5 bg-[#FFFFFF] mb-7" placeholder="First Name">
+                <input type="text" class="w-full p-3 placeholder-[#000000] font-semibold text-[#000000] tabletS:text-sm mobile:text-xs mobileS:text-[10px] mobile:px-8 mobileS:px-5 bg-[#FFFFFF] mb-7" placeholder="Last Name">
+                <input type="email" class="w-full p-3 placeholder-[#000000] font-semibold text-[#000000] tabletS:text-sm mobile:text-xs mobileS:text-[10px] mobile:px-8 mobileS:px-5 bg-[#FFFFFF] mb-7" placeholder="Email">
+                <input type="number" class="w-full p-3 placeholder-[#000000] font-semibold text-[#000000] tabletS:text-sm mobile:text-xs mobileS:text-[10px] mobile:px-8 mobileS:px-5 bg-[#FFFFFF] mb-7" placeholder="Phone">
+                <select class="w-full font-semibold text-[#000000] tabletS:text-sm mobile:text-xs mobileS:text-[10px] mobile:px-8 mobileS:px-5 bg-[#FFFFFF] py-3">
+                    <option>Event registration</option>
+                    <option>Account creation</option>
+                    <option>Searching for event</option>
+                    <option>Billing issue</option>
+                    <option>Other</option>
+                </select>
+                <textarea name="message" class="w-full h-36 placeholder-[#000000] font-semibold text-[#000000] tabletS:text-sm mobile:text-xs mobileS:text-[10px] leading-5 my-7 mobile:px-8 mobileS:px-5 py-6" placeholder="Message"></textarea>
+                <button class="w-full p-3 bg-[#E07A5F]"><p class="text-[#FFFFFF] font-semibold tabletS:text-base mobile:text-sm mobileS:text-xs">Submit</p></button>
             </div>
         </div>
     </div>
 </body>
 </html>
+
